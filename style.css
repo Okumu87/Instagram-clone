@@ -25,7 +25,7 @@ img {
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        border-bottom: 1px solid #C6C6C6;
+
 
         .user-avatar{
         width: 50px;
@@ -40,6 +40,10 @@ img {
 
 }
 
+.border-line{
+    border: 1px solid #dbdbdb;
+}
+
 .post-id{
     display: flex;
     align-items: center;
@@ -52,10 +56,6 @@ img {
     }
 }
 
-.post-image{
-    width: 600px;
-    height: auto;
-}
 
 .social-actions{
     display: flex;
