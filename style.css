@@ -67,6 +67,10 @@ img {
     }
 }
 
+.icon:hover{
+    cursor: pointer;
+}
+
 .likes{
    margin: 0.3rem;
  font-weight: bold;

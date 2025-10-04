@@ -28,6 +28,55 @@ const posts = [
     }
 ]
 
+// rendering the posts to the page
+
+
+function renderPost(){
+const feed = document.getElementById("feed");
+feed.innerHTML = "";
+
+posts.forEach(function(post){
+    feed.innerHTML += `   
+    <section class="post" id="post">
+
+                <div class="post-id">
+                    <img class="avatar-account" src="${post.avatar}" alt="avatar-account">
+                <div class="post-info">
+                        <h2>${post.name}</h2>
+                        <p>${post.location}</p>
+                </div>
+                </div>
+            
+                <div class="post-image">
+                    <img src="${post.post}" alt="post-image">
+
+            <div class="social-actions">
+                    <img class="icon" id="like-btn" src="./images/icon-heart.png" alt="heart">
+                    <img class="icon" id="comment-btn" src="./images/icon-comment.png" alt="comment-icon">
+                    <img class="icon" id="dm-btn" src="./images/icon-dm.png" alt="share-icon">
+            
+            </div>
+         <div >
+                 <p class="likes">${post.likes}</p>
+         </div>
+         <div class="comment-section">
+            <p class="username">${post.username}</p>
+            <p class="comment">${post.comment}</p>
+         </div>
+            </div>
+        
+        
+                
+            </section>
+`
+ 
+})
+
+}
+renderPost();
+
+
+
 // buttons 
 
 const likeBtn = document.getElementById("like-btn")
@@ -36,5 +85,8 @@ const dmBtn = document.getElementById("dm-btn")
 
 const section = document.getElementById("post")
 
+
+
+// event listeners
 
 
